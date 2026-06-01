@@ -75,7 +75,7 @@ head -n 4 /usr/local/etc/xray/sh/xray.sh
 ## Quantumult X 配置示例
 
 ### SS + ReaLity
-
+####此协议所输出配置格式默认不加入udp-over-tcp=sp.v2,使其走节点原生UDP,如有需要可在udp-relay=true,后加入udp-over-tcp=sp.v2,使其走UDP over TCP（UoT）,即可、
 ```text
 shadowsocks=服务器IP:端口, method=2022-blake3-aes-128-gcm 或 aes-128-gcm, password=密码, obfs=over-tls, obfs-host=伪装域名, tls-verification=false, reality-base64-pubkey=公钥, reality-hex-shortid=短ID, udp-relay=true, tag=节点名称
 ```
